@@ -1,0 +1,12 @@
+seven_scenes_node:
+  ros__parameters:
+    dataset_path: "/home/enrique/DATASET/office/seq-10" # It has to be an absolute path E.g ~/DATASETS/office/seq-10
+    frame_id: sensor
+    global_frame_id: map
+    max_files: 300
+    wait_millis: 100
+    fx: 585.0
+    fy: 585.0
+    cx: 320.0
+    cy: 240.0
+    factor: 1000.0

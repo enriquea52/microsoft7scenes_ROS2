@@ -50,15 +50,17 @@ git clone && colcon build --packages-select microsoft7scenes --symlink-install
 cd ~/ros2_ws && colcon build --symlink-install  --packages-select microsoft7scenes 
 ```
 
-2. Navigate to  ~/ros2_ws/microsoft7scences/params/params.yaml file and modify the `dataset_path` parameter wth the absolute path of your dataset sequence to use (folder with format seq-XX where XX is the sequence number).
+4. Navigate to  ~/ros2_ws/microsoft7scences/params/params.yaml file and modify the `dataset_path` parameter wth the absolute path of your dataset sequence to use (folder with format seq-XX where XX is the sequence number).
 
-3. You can launch the dataset by itself
+5. Launch the `seven_scenes_node`
+
+5.1 You can launch the dataset by itself with parameters specified in the params.yaml file.
 
 ```
 ros2 launch microsoft7scenes launch_dataset.launch.py 
 ```
 
-4. Or you can launch it with RViz2 for visualization
+5.2. Or you can launch it with RViz2 for visualization
 
 ```
 ros2 launch microsoft7scenes launch_dataset_rviz.launch.py 
